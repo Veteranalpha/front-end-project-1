@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <title>front end mentor</title>
+  </head>
+  <body class="poppins-regular primaryColor">
+    <section class="header w-full mx-auto">
+      <div class="py-4 flex justify-between items-center w-full px-8">
+        <div class="flex justify-between items-center space-x-20">
+          <div class="logo flex justify-between">
+            <img src="images\logo.svg" alt="" srcset="" />
+          </div>
+          <div class="nav-bar hidden md:block">
+            <ul class="flex space-x-8 text-base text-gray-600">
+              <li class="cursor-pointer features">
+                <span
+                  class="hover:text-black hover:font-semibold transition-all ease-in-out duration-300"
+                  >Features</span
+                >
+
+                <img
+                  src="images\icon-arrow-down.svg"
+                  class="inline-block"
+                  alt=""
+                  srcset=""
+                />
+                <div
+                  class="absolute bg-white py-3 px-4 rounded-lg mt-3 shadow-lg feature-nav hidden"
+                >
+                  <ul class="flex flex-col min-w-24 text-sm space-y-2">
+                    <li class="hover:font-bold">
+                      <img
+                        src="images\icon-todo.svg"
+                        class="inline-block pr-3"
+                        alt=""
+                        srcset=""
+                      />Todo List
+                    </li>
+                    <li class="hover:font-bold">
+                      <img
+                        src="images\icon-calendar.svg"
+                        class="inline-block pr-3"
+                        alt=""
+                        srcset=""
+                      />Calender
+                    </li>
+                    <li class="hover:font-bold">
+                      <img
+                        src="images\icon-Reminders.svg"
+                        class="inline-block pr-3"
+                        alt=""
+                        srcset=""
+                      />Reminders
+                    </li>
+                    <li class="hover:font-bold">
+                      <img
+                        src="images\icon-planning.svg"
+                        class="inline-block pr-3"
+                        alt=""
+                        srcset=""
+                      />Planning
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="cursor-pointer company">
+                <a href="#">
+                  <span
+                    class="hover:text-black hover:font-semibold active:text-black active:font-semibold transition-all ease-in-out duration-300"
+                    >Company</span
+                  >
+                </a>
+
+                <img
+                  src="images\icon-arrow-down.svg"
+                  class="inline-block"
+                  alt=""
+                  srcset=""
+                />
+                <div
+                  class="absolute bg-white py-3 px-4 rounded-lg mt-3 shadow-lg hidden company-nav"
+                >
+                  <ul class="flex flex-col min-w-24 text-sm space-y-2">
+                    <li class="hover:font-bold">History</li>
+                    <li class="hover:font-bold">Our Teams</li>
+                    <li class="hover:font-bold">Blogs</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="cursor-pointer">
+                <a href="#">
+                  <span
+                    class="hover:text-black hover:font-semibold active:text-black active:font-semibold transition-all ease-in-out duration-300"
+                    >Careers</span
+                  >
+                </a>
+              </li>
+              <li class="cursor-pointer">
+                <a href="#">
+                  <span
+                    class="hover:text-black hover:font-semibold active:text-black active:font-semibold transition-all ease-in-out duration-300"
+                    >About</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="space-x-7 text-gray-700 text-base hidden md:block">
+          <input
+            type="button"
+            value="Login"
+            class="hover:text-black hover:font-semibold active:text-black active:font-semibold transition-all ease-in-out duration-300"
+          />
+          <input
+            type="button"
+            class="px-6 py-2 border-gray-600 border rounded-xl hover:text-black hover:font-semibold active:text-black active:font-semibold transition-all ease-in-out duration-300"
+            value="Register"
+          />
+        </div>
+        <div class="inline-block md:hidden burger">
+          <img src="images\icon-menu.svg" alt="" srcset="" />
+        </div>
+      </div>
+      <!-- MOBILE NAVBAR -->
+      <div class="absolute right-0 top-0 bg-white w-9/12 h-screen hidden mobnav transition-all duration-300 ease-in-out">
+        <div class="absolute right-6 top-3 hover:cursor-pointer">
+          <img src="images\icon-close-menu.svg" alt="" srcset=""  class="cancel"/>
+        </div>
+        <div class=" w-full">
+          <ul class="py-20 px-6 flex flex-col space-y-4 h-full">
+            <li class="mob-features hover:cursor-pointer">
+              <span class="mr-2 font-medium ">Features</span>
+              <img src="images\icon-arrow-down.svg" alt="" srcset="" class="inline-block">
+              <img src="images\icon-arrow-up.svg" alt="" srcset="" class="hidden">
+              
+              <div
+                  class="bg-white px-4 rounded-lg mt-3  mob-feature-nav hidden"
+                >
+                  <ul class="flex flex-col  text-sm space-y-4">
+                    <li class="hover:font-bold">
+                      <img
+                        src="images\icon-todo.svg"
+                        class="inline-block pr-3"
+                        alt=""
+                        srcset=""
+                      />Todo List
+                    </li>
+                    <li class="hover:font-bold">
+                      <img
+                        src="images\icon-calendar.svg"
+                        class="inline-block pr-3"
+                        alt=""
+                        srcset=""
+                      />Calender
+                    </li>
+                    <li class="hover:font-bold">
+                      <img
+                        src="images\icon-Reminders.svg"
+                        class="inline-block pr-3"
+                        alt=""
+                        srcset=""
+                      />Reminders
+                    </li>
+                    <li class="hover:font-bold">
+                      <img
+                        src="images\icon-planning.svg"
+                        class="inline-block pr-3"
+                        alt=""
+                        srcset=""
+                      />Planning
+                    </li>
+                  </ul>
+                </div>
+            </li>
+            <li class="mob-company hover:cursor-pointer">
+              <span class="mr-2 font-medium">Company</span>
+              <img src="images\icon-arrow-down.svg" alt="" srcset="" class="inline-block">
+            <img src="images\icon-arrow-up.svg" alt="" srcset="" class="hidden">
+
+              <div
+                  class="bg-white px-4 rounded-lg mt-3  company-mob-nav hidden"
+                >
+                  <ul class="flex flex-col  text-sm space-y-2">
+                    <li class="hover:font-bold ">
+                History
+                    </li>
+                    <li class="hover:font-bold">
+                  Our Teams
+                    </li>
+                    <li class="hover:font-bold">
+                  Blog
+                    </li>
+                  </ul>
+                </div>
+            </li>
+            <li>
+              <span class="font-medium">Careers</span>
+            </li>
+            <li>
+              <span class="font-medium">About</span>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full flex flex-col px-6 space-y-3">
+          <input
+            type="button"
+            value="Login"
+            class="hover:text-black hover:font-semibold active:text-black active:font-semibold transition-all ease-in-out duration-300"
+          />
+          <input
+            type="button"
+            class="px-6 py-2 border-gray-600 border rounded-xl hover:text-black hover:font-semibold active:text-black active:font-semibold transition-all ease-in-out duration-300"
+            value="Register"
+          />
+        </div>
+        
+      </div>
+      </div>
+    </section>
+    <section class="container mx-auto w-full h-90vh">
+      <div
+        class="grid md:grid-cols-2 gap-4 justify-center items-center h-full w-full grid-cols-1"
+      >
+        <div>
+          <h1
+            class="text-3xl font-black lg:text-6xl md:text-4xl px-4 text-center md:text-left"
+          >
+            Make <br class="hidden md:block" />
+            remote work
+          </h1>
+          <br /><br />
+          <p
+            class="px-4 text-lg leading-normal text-wrap text-center md:text-left"
+          >
+            Get your team in sync no matter your location, Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <br /><br />
+          <div class="mx-auto w-full flex justify-center md:justify-start">
+            <input
+              type="button"
+              class="px-6 py-2 border-gray-600 border rounded-xl hover:text-black hover:bg-white font-semibold transition-all ease-in-out duration-300 bg-black text-white"
+              value="Learn more"
+            />
+          </div>
+
+          <ul
+            class="sponsors flex pt-16 space-x-7 justify-center md:justify-start"
+          >
+            <li><img src="images\client-audiophile.svg" alt="" srcset="" /></li>
+            <li><img src="images\client-maker.svg" alt="" srcset="" /></li>
+            <li><img src="images\client-databiz.svg" alt="" srcset="" /></li>
+            <li><img src="images\client-meet.svg" alt="" srcset="" /></li>
+          </ul>
+        </div>
+        <div
+          class="w-full flex md:items-end md:justify-end items-center justify-center order-first md:order-last"
+        >
+          <img
+            src="images\image-hero-desktop.png"
+            alt=""
+            srcset=""
+            class="justify-center w-2/3 object-contain hidden md:block"
+          />
+          <img
+            src="images\image-hero-mobile.png"
+            alt=""
+            srcset=""
+            class="justify-center object-contain md:hidden block"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="overlay absolute w-full h-full top-0 left-0 -z-10"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
